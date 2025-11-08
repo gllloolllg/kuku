@@ -159,9 +159,9 @@ function setView(v){
 function passBadge(dan, modeKey){
   const status = passStatus[dan-1]?.[modeKey];
   return status
-    ? `<span class="badge" aria-label="合格済み"><img class="icon-pass" src="/image/goukaku.png" alt="合格"></span>`
+    ? `<span class="badge" aria-label="合格済み"><img class="icon-pass" src="image/goukaku.png" alt="合格"></span>`
     : `<span class="badge unpassed" aria-label="未合格">
-          <img class="icon-pass" src="./image/goukaku.png" alt="未合格">
+          <img class="icon-pass" src="image/goukaku.png" alt="未合格">
        </span>`;
 }
 
@@ -541,3 +541,4 @@ document.getElementById('pass-form').addEventListener('submit', async (e)=>{
 /* ---------- 初期化 ---------- */
 setView({kind:'menu'});
 fetchStatus();
+
