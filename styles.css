@@ -13,6 +13,7 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
+  padding-top: env(safe-area-inset-top);
   margin:0; background:var(--bg); color:var(--text);
   font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -178,3 +179,4 @@ body{
   0%{ background:#fff5; }
   100%{ background:transparent; }
 }
+
