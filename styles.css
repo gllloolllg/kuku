@@ -17,7 +17,6 @@ body{
   font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-* { -webkit-tap-highlight-color: transparent; }
 #app-title{
   position:sticky; top:0; z-index:5;
   font-family: "DotGothic16", sans-serif;
@@ -38,7 +37,12 @@ body{
 }
 
 .container{
-  max-width:90dvh; margin:0 auto; padding:0 14px;
+  max-width:90dvh;
+  border:none;
+  outline: none;
+  -webkit-box-shadow:none;
+  box-shadow: none;
+  margin:0 auto; padding:0 14px;
 }
 .card{
   background:var(--panel);
