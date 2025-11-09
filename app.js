@@ -363,7 +363,7 @@ function renderMemorize(dan){
 
 /** ========== 画面：れんしゅう（初期は読み非表示／タップで答え＋読みを表示） ========== */
 function renderRecite(dan) {
-  titleEl.textContent = `${dan}の段 ・ ${MODE_LABEL[MODES.ANSHO]}`;
+  titleEl.textContent = `${dan}のだん ・ ${MODE_LABEL[MODES.ANSHO]}`;
   appEl.innerHTML = `
     <section class="card">
       <div class="kuku-list">
@@ -416,7 +416,7 @@ function renderRecite(dan) {
 
 /** ========== 画面：あんきテスト（式のみ＝答えなし） ========== */
 function renderAnkiTest(dan){
-  titleEl.textContent = `${dan}の段 ・ ${MODE_LABEL[MODES.ANKI_TEST]}`;
+  titleEl.textContent = `${dan}のだん ・ ${MODE_LABEL[MODES.ANKI_TEST]}`;
   appEl.innerHTML = `
     <section class="card">
       <div class="kuku-list">
@@ -440,7 +440,7 @@ function renderAnkiTest(dan){
 
 /** ========== 画面：九九テスト（式のみ＝答えなし） ========== */
 function renderFinalTest(dan){
-  titleEl.textContent = `${dan}の段 ・ ${MODE_LABEL[MODES.FINAL_TEST]}`;
+  titleEl.textContent = `${dan}のだん ・ ${MODE_LABEL[MODES.FINAL_TEST]}`;
 
   const order = shuffle(oneToNine());
   let idx = 0;
@@ -541,4 +541,5 @@ document.getElementById('pass-form').addEventListener('submit', async (e)=>{
 /* ---------- 初期化 ---------- */
 setView({kind:'menu'});
 fetchStatus();
+
 
